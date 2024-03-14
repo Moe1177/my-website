@@ -49,3 +49,11 @@ button:active {
     width: 150px;
     border-radius: 75px;
 }
+
+a {
+  margin-right: 10px;
+}
+
+a button i{
+  font-size: 25px;
+}
