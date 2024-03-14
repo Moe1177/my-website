@@ -1,0 +1,65 @@
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 6px;
+  transition: color 0.5s ease, padding-bottom 0.5s ease;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: white; /* Change color on hover */
+  padding-bottom: 6px; /* Adjust padding on hover */
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+a .fa-brands {
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 23px;
+    color: lightgray;
+    transition: transform 0.5s;
+}
+
+a .fa-brands:hover {
+    transform: translateY(-5px);
+}
+
+a .fa-linkedin {
+    color: dodgerblue;
+}
