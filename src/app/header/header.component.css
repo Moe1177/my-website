@@ -49,9 +49,9 @@ nav ul li a:hover::before {
 }
 
 a .fa-brands {
-    margin-right: 10px;
+    margin-right: 15px;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 25px;
     color: lightgray;
     transition: transform 0.5s;
 }
@@ -62,4 +62,26 @@ a .fa-brands:hover {
 
 a .fa-linkedin {
     color: dodgerblue;
+}
+
+/* Media Query for Hamburger Menu */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse.collapse.show {
+    display: block;
+  }
 }

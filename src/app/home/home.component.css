@@ -1,25 +1,27 @@
 /* home.component.css */
+:host {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
 .container {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 h1 {
-  font-size: 36px;
-  color: white;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .gradient-text {
   background-image: linear-gradient(to right, violet, dodgerblue);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
 p {
-  font-size: 18px;
-  color: white;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 button {
@@ -38,22 +40,40 @@ button {
 button:hover {
   transform: translateY(-4px) translateX(-2px);
   box-shadow: 2px 5px 0 0 dodgerblue;
-};
+}
 
 button:active {
   transform: translateY(2px) translateX(1px);
   box-shadow: 0 0 0 0 black;
-};
+}
 
-.profile-picture {
-    width: 150px;
-    border-radius: 75px;
+.img-fluid {
+  max-width: 100%;
 }
 
 a {
   margin-right: 10px;
 }
 
-a button i{
+a button i {
   font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 0.875rem 1.75rem;
+  }
 }

@@ -2,7 +2,8 @@
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Collapsible wrapper -->
-    <a class="title">Moe.dev</a>
+    <a class="title" routerLink="/home">Moe.dev</a>
+
     <div
       class="collapse navbar-collapse justify-content-center"
       id="navbarCenteredExample"
@@ -12,19 +13,19 @@
         <li class="nav-item">
           <a
             routerLink="/home"
+            routerLinkActive="active"
             class="nav-link active"
             style="font-size: 18px; font-weight: bold; color: white"
             aria-current="page"
-            href="#"
             >Home</a
           >
         </li>
         <li class="nav-item">
           <a
             routerLink="/about"
+            routerLinkActive="active"
             class="nav-link"
             style="font-size: 18px; font-weight: bold; color: white"
-            href="#"
             >About</a
           >
         </li>
@@ -33,7 +34,6 @@
             routerLink="/projects"
             class="nav-link"
             style="font-size: 18px; font-weight: bold; color: white"
-            href="#"
             >Projects</a
           >
         </li>
@@ -42,16 +42,15 @@
             routerLink="/contact"
             class="nav-link"
             style="font-size: 18px; font-weight: bold; color: white"
-            href="#"
             >Contact</a
           >
         </li>
       </ul>
     </div>
-    <a href="https://linkedin.com/in/mohamad-addasi/">
+    <a href="https://linkedin.com/in/mohamad-addasi/" target="_blank">
       <i class="fa-brands fa-linkedin"></i>
     </a>
-    <a href="https://github.com/Moe1177">
+    <a href="https://github.com/Moe1177" target="_blank">
       <i class="fa-brands fa-github"></i>
     </a>
   </div>

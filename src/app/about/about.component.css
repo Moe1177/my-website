@@ -1,0 +1,116 @@
+* {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* home.component.css */
+.container {
+  margin-top: 150px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, violet, dodgerblue);
+  background-clip: text;
+  color: transparent;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: transparent;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(95, 95, 95, 0),
+    rgba(116, 116, 116, 0)
+  );
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(95, 95, 95, 0),
+    rgba(141, 141, 141, 0)
+  );
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+  margin: 10px 5px;
+}
+
+button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 dodgerblue;
+};
+
+button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+};
+
+
