@@ -1,0 +1,11 @@
+:host {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+h1 span {
+  background-image: linear-gradient(to right, violet, dodgerblue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

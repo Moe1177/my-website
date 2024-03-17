@@ -1,5 +1,5 @@
-body {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+:host {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 nav ul {
@@ -49,19 +49,19 @@ nav ul li a:hover::before {
 }
 
 a .fa-brands {
-    margin-right: 15px;
-    text-decoration: none;
-    font-size: 25px;
-    color: lightgray;
-    transition: transform 0.5s;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: lightgray;
+  transition: transform 0.5s;
 }
 
 a .fa-brands:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 a .fa-linkedin {
-    color: dodgerblue;
+  color: dodgerblue;
 }
 
 /* Media Query for Hamburger Menu */

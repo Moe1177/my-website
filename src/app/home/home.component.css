@@ -59,7 +59,7 @@ a button i {
   font-size: 25px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container {
     margin-top: 100px;
   }
@@ -70,10 +70,15 @@ a button i {
 
   p {
     font-size: 0.8rem;
+    display: inline-block;
   }
 
   button {
     font-size: 1.1rem;
-    padding: 0.875rem 1.75rem;
+    padding: 0.85rem 1.55rem;
+  }
+
+  img {
+    text-align: center;
   }
 }

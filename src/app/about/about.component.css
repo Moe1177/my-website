@@ -30,63 +30,43 @@ p {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.logos img {
+  width: 50px;
 }
 
 .logos {
-  overflow: hidden;
-  padding: 60px 0;
-  background: transparent;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 150px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-.logos:before {
-  left: 0;
-  background: linear-gradient(
-    to left,
-    rgba(95, 95, 95, 0),
-    rgba(116, 116, 116, 0)
-  );
-}
-
-.logos:after {
-  right: 0;
-  background: linear-gradient(
-    to right,
-    rgba(95, 95, 95, 0),
-    rgba(141, 141, 141, 0)
-  );
-}
-
-.logos:hover .logos-slide {
-  animation-play-state: paused;
+  max-width: 600px;
 }
 
 .logos-slide {
-  display: inline-block;
-  animation: 15s slide infinite linear;
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.logos-slide img {
-  height: 50px;
-  margin: 0 40px;
+.logos[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.logos[data-animated="true"] .logos-slide {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
 }
 
 button {
@@ -106,11 +86,20 @@ button {
 button:hover {
   transform: translateY(-4px) translateX(-2px);
   box-shadow: 2px 5px 0 0 dodgerblue;
-};
+}
 
 button:active {
   transform: translateY(2px) translateX(1px);
   box-shadow: 0 0 0 0 black;
-};
+}
 
+.btn-primary {
+  background-color: transparent;
+  color: #007bff;
+  transition: 0.5s;
+}
 
+.btn-primary:hover {
+  color: white;
+  background-color: #007bff;
+}
