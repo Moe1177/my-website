@@ -1,0 +1,46 @@
+:host {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+ul img {
+  margin-right: 13px;
+}
+
+.logos {
+  width: 25px;
+}
+
+.logos-html {
+  width: 33px;
+}
+
+.card-content {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card-body {
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+.fa-brands,
+.fa-solid {
+  font-size: 20px;
+  margin-right: 15px;
+  transition: 0.5s;
+}
+
+.fa-brands:hover,
+.fa-solid:hover {
+  transform: translateY(-5px);
+}

@@ -1,0 +1,30 @@
+<div class="card" style="width: 20rem; max-height: 495px; min-height: 495px;">
+  <img src="{{ project.picture }}" class="card-img-top" alt="..." style="max-height: 220px; min-height: 220px;" />
+  <div class="card-body">
+    <h5 class="card-title fw-bold">{{ project.title }}</h5>
+    <p class="card-text">
+      {{ project.summary }}
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+
+        <div *ngFor="let tag of project.tags" style="display: inline-block;">
+            <img
+        class="logos logos-html"
+        src="{{ tag }}"
+        alt="#"
+      />
+        </div>
+      
+    </li>
+  </ul>
+  <div class="card-footer">
+    <a href="{{ project.projectLink }}" type="button" target="_blank">
+      <i class="fa-brands fa-github" style="color: black"></i>
+    </a>
+    <a href="#" type="button" class="card-link"
+      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+    ></a>
+  </div>
+</div>
