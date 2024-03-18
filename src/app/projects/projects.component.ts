@@ -13,10 +13,10 @@ export class ProjectsComponent {
     {
       id: this.counter,
       title: `Friend's Portfolio Website`,
-      summary:
-        'Simple portfolio website I built for my friend to help him post his architectural portfolio.',
+      summary: `Simple portfolio website I built for my friend to help him post his architectural portfolio. 
+        (Demo Coming Soon)`,
       tags: [
-        '../assets/logos/html5-without-wordmark-color-seeklogo.svg',
+        '../assets/logos/HTML5_Badge.svg',
         '../assets/logos/css-3-seeklogo.svg',
         '../assets/logos/javascript-seeklogo.svg',
       ],
@@ -27,8 +27,8 @@ export class ProjectsComponent {
     {
       id: ++this.counter,
       title: `Fluent Fingers`,
-      summary:
-        'This project won me and my team 3rd place at McHacks 11. It is a full stack application where we built a Neural Network that translates sign language.',
+      summary: `This project won me and my team 3rd place at McHacks 11. It is a full stack application where we built a Neural Network that translates sign language.
+        (Demo Coming Soon)`,
       tags: [
         '../assets/logos/react-seeklogo.svg',
         '../assets/logos/bootstrap-5-seeklogo.svg',
@@ -42,11 +42,11 @@ export class ProjectsComponent {
     {
       id: ++this.counter,
       title: `Face Recognition`,
-      summary:
-        'This project was what introduced me to OpenCV and the world of AI. It is a simple program that detects faces.',
+      summary: `This project was what introduced me to OpenCV and the world of AI. It is a simple program that detects faces.
+        (Demo Coming Soon)`,
       tags: [
         '../assets/logos/python-seeklogo.svg',
-        '../assets/logos/opencv-seeklogo.svg',
+        '../assets/logos/OpenCV_logo_black.svg',
       ],
       projectLink: 'https://github.com/Moe1177/Face-Detection',
       picture: '../assets/images/Face-Recognition.jpeg',
