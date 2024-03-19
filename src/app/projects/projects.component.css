@@ -48,3 +48,8 @@ ul img {
     transform: translateY(-5px);
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hello {
+    margin-right: 35px;
+  }
+}

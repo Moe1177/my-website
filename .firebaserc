@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "moedev-75400"
+  },
+  "targets": {
+    "moedev-75400": {
+      "hosting": {
+        "my-website": [
+          "moedev-75400"
+        ]
+      }
+    }
+  }
+}

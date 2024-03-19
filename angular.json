@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/my-website",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -36,8 +36,7 @@
               "src/images/ProfilePicture.jpg"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -100,6 +99,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "my-website:build:production",
+              "serveTarget": "my-website:serve:production"
+            },
+            "development": {
+              "buildTarget": "my-website:build:development",
+              "serveTarget": "my-website:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

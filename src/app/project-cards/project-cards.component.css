@@ -1,6 +1,6 @@
 :host {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color: white;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 ul img {
@@ -45,3 +45,5 @@ ul img {
 .fa-solid:hover {
   transform: translateY(-5px);
 }
+
+

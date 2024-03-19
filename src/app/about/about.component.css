@@ -103,3 +103,17 @@ button:active {
   color: white;
   background-color: #007bff;
 }
+
+
+@media(max-width: 991px) {
+  a button {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 768px) {
+  .card {
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+}

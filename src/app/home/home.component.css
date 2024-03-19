@@ -82,3 +82,23 @@ a button i {
     text-align: center;
   }
 }
+
+@media(max-width: 991px) {
+  a button {
+    font-size: 13px;
+  }
+
+  a button i {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 358px) {
+  a button {
+    font-size: 12px;
+  }
+
+  a button i {
+    font-size: 18px;
+  }
+}

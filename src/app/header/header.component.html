@@ -1,57 +1,90 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-  <!-- Container wrapper -->
-  <div class="container-fluid" >
-    <!-- Collapsible wrapper -->
-    <a class="title" routerLink="/home">Moe.dev</a>
-
-    <div
-      class="collapse navbar-collapse justify-content-center"
-      id="navbarCenteredExample"
+<nav class="navbar-expand-lg navbar navbar-light">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand fs-4 text-white" routerLink="/home">Moe.dev</a>
+    <!-- Toogle Button -->
+    <button
+      class="navbar-toggler shadow-none border-0"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+      aria-label="Toggle navigation"
     >
-      <!-- Left links -->
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a
-            routerLink="/home"
-            routerLinkActive="active"
-            class="nav-link active"
-            style="font-size: 18px; font-weight: bold; color: white"
-            aria-current="page"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            routerLink="/about"
-            routerLinkActive="active"
-            class="nav-link"
-            style="font-size: 18px; font-weight: bold; color: white"
-            >About</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            routerLink="/projects"
-            class="nav-link"
-            style="font-size: 18px; font-weight: bold; color: white"
-            >Projects</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            routerLink="/contact"
-            class="nav-link"
-            style="font-size: 18px; font-weight: bold; color: white"
-            >Contact</a
-          >
-        </li>
-      </ul>
+      <i class="fa-solid fa-bars" style="color: white"></i>
+    </button>
+
+    <!-- SideBar -->
+    <div
+      class="offcanvas offcanvas-end bg-transparent"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <!-- Side Header -->
+      <div class="offcanvas-header bg-transparent text-white border-bottom">
+        <h5 class="offcanvas-title text-shadow" id="offcanvasNavbarLabel">
+          Moe.dev
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white shadow-none"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- SideBar Body-->
+      <div class="offcanvas-body d-flex bg-transparent">
+        <ul
+          class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
+        >
+          <li class="nav-item mx-2">
+            <a
+              routerLink="/home"
+              routerLinkActive="active"
+              class="nav-link active"
+              style="font-size: 18px; font-weight: bold; color: white"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a
+              routerLink="/about"
+              routerLinkActive="active"
+              class="nav-link"
+              style="font-size: 18px; font-weight: bold; color: white"
+              >About</a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a
+              routerLink="/projects"
+              class="nav-link"
+              style="font-size: 18px; font-weight: bold; color: white"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a
+              routerLink="/contact"
+              class="nav-link"
+              style="font-size: 18px; font-weight: bold; color: white"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- Github & LinkedIn Icons -->
+        <div class="d-flex justify-content-center align-items-center gap-3">
+          <a href="https://linkedin.com/in/mohamad-addasi/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Moe1177" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
     </div>
-    <a href="https://linkedin.com/in/mohamad-addasi/" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/Moe1177" target="_blank">
-      <i class="fa-brands fa-github"></i>
-    </a>
   </div>
 </nav>

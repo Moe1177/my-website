@@ -40,16 +40,8 @@ nav ul li a:hover::before {
   width: 100%;
 }
 
-.title {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
 a .fa-brands {
-  margin-right: 15px;
+  margin-top: 10px;
   text-decoration: none;
   font-size: 25px;
   color: lightgray;
@@ -64,24 +56,11 @@ a .fa-linkedin {
   color: dodgerblue;
 }
 
-/* Media Query for Hamburger Menu */
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    text-align: center;
-    padding-top: 20px;
-  }
 
-  nav ul li {
-    display: block;
-    margin: 10px 0;
+@media (max-width: 991px) {
+  #offcanvasNavbar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
   }
-
-  .navbar-toggler {
-    display: block;
-  }
-
-  .navbar-collapse.collapse.show {
-    display: block;
-  }
+  
 }
