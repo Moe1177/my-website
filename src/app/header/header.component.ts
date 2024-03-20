@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Offcanvas } from 'bootstrap';
 
 @Component({
   selector: 'app-header',
@@ -6,16 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  menuValue: boolean = true;
-  menuIcon: string = 'fa-solid fa-bars';
+  @ViewChild('navbarNav') navbarNavElement: ElementRef;
+  private offcanvas: Offcanvas;
 
-  openMenu() {
-    this.menuValue = !this.menuValue;
-    this.menuIcon = this.menuValue ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
+  constructor() {}
+
+  ngAfterViewInit(): void {
+    this.offcanvas = new Offcanvas(this.navbarNavElement.nativeElement);
   }
 
-  closeMenu() {
-    this.menuValue = false;
-    this.menuIcon = 'fa-solid fa-bars';
+  closeOffcanvas(): void {
+    this.offcanvas.hide();
   }
+
 }

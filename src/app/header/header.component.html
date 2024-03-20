@@ -1,4 +1,4 @@
-<nav class="navbar-expand-lg navbar navbar-light">
+<nav class="navbar-expand-lg navbar">
   <div class="container">
     <!-- Logo -->
     <a class="navbar-brand fs-4 text-white" routerLink="/home">Moe.dev</a>
@@ -17,8 +17,9 @@
     <!-- SideBar -->
     <div
       class="offcanvas offcanvas-end bg-transparent"
-      tabindex="-1"
+      tabindex="-1 "
       id="offcanvasNavbar"
+      #navbarNav
       aria-labelledby="offcanvasNavbarLabel"
     >
       <!-- Side Header -->
@@ -35,7 +36,9 @@
       </div>
 
       <!-- SideBar Body-->
-      <div class="offcanvas-body d-flex bg-transparent">
+      <div
+        class="offcanvas-body d-flex flex-column flex-lg-row p-4 bg-transparent p-lg-0"
+      >
         <ul
           class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
         >
@@ -46,6 +49,7 @@
               class="nav-link active"
               style="font-size: 18px; font-weight: bold; color: white"
               aria-current="page"
+              (click)="closeOffcanvas()"
               >Home</a
             >
           </li>
@@ -55,6 +59,7 @@
               routerLinkActive="active"
               class="nav-link"
               style="font-size: 18px; font-weight: bold; color: white"
+              (click)="closeOffcanvas()"
               >About</a
             >
           </li>
@@ -63,6 +68,7 @@
               routerLink="/projects"
               class="nav-link"
               style="font-size: 18px; font-weight: bold; color: white"
+              (click)="closeOffcanvas()"
               >Projects</a
             >
           </li>
@@ -71,12 +77,15 @@
               routerLink="/contact"
               class="nav-link"
               style="font-size: 18px; font-weight: bold; color: white"
+              (click)="closeOffcanvas()"
               >Contact</a
             >
           </li>
         </ul>
         <!-- Github & LinkedIn Icons -->
-        <div class="d-flex justify-content-center align-items-center gap-3">
+        <div
+          class="d-flex justify-content-center flex-lg-row align-items-center gap-3"
+        >
           <a href="https://linkedin.com/in/mohamad-addasi/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
           </a>
