@@ -3,12 +3,12 @@
     <h1 class="pb-5">Contact <span>Me</span></h1>
     <div class="col-md-5">
       <div class="form-container">
-        <form class="form" action="https://formspree.io/f/mkndvjby" method="post">
+        <form class="form" id="myForm" action="https://formspree.io/f/mkndvjby" method="post" >
           <div class="form-group">
             <input
               placeholder="Full Name"
               required=""
-              name="Name"
+              name="name"
               id="full-name"
               type="text"
             />
@@ -16,7 +16,7 @@
             <input
               placeholder="Email"
               required=""
-              name="Email"
+              name="email"
               id="email"
               type="text"
             />
@@ -28,10 +28,10 @@
               cols="50"
               rows="10"
               id="textarea"
-              name="Message"
+              name="message"
             ></textarea>
           </div>
-          <button type="submit" class="form-submit-btn">Submit</button>
+          <button type="submit" class="form-submit-btn" id="submitBtn">Submit</button>
         </form>
       </div>
     </div>
