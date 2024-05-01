@@ -70,17 +70,22 @@ p {
 }
 
 button {
-  background-color: white;
-  color: black;
+  background-color: rgb(53, 53, 53);
+  color: white;
   border-radius: 10em;
   font-size: 17px;
   font-weight: 600;
   padding: 1em 2em;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  border: 1px solid black;
-  box-shadow: 0 0 0 0 black;
+  border: 1px solid gray;
+  box-shadow: 0 0 0 0 rgb(0, 0, 0);
   margin: 10px 5px;
+}
+
+.devpost-button {
+  background-color: white;
+  color: black;
 }
 
 button:hover {
@@ -104,14 +109,13 @@ button:active {
   background-color: #007bff;
 }
 
-
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   a button {
     font-size: 14px;
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .card {
     margin-top: 40px;
     margin-left: 10px;

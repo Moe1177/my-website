@@ -1,5 +1,12 @@
-<div class="card" style="width: 20rem; max-height: 495px; min-height: 495px;">
-  <img src="{{ project.picture }}" class="card-img-top" alt="..." style="max-height: 220px; min-height: 220px;" />
+<div class="card" style="width: 20rem; max-height: 495px; min-height: 495px">
+  <a href="{{ project.projectLink }}">
+    <img
+      src="{{ project.picture }}"
+      class="card-img-top"
+      alt="..."
+      style="max-height: 220px; min-height: 220px"
+    />
+  </a>
   <div class="card-body">
     <h5 class="card-title fw-bold">{{ project.title }}</h5>
     <p class="card-text">
@@ -8,15 +15,9 @@
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
-
-        <div *ngFor="let tag of project.tags" style="display: inline-block;">
-            <img
-        class="logos"
-        src="{{ tag }}"
-        alt="#"
-      />
-        </div>
-      
+      <div *ngFor="let tag of project.tags" style="display: inline-block">
+        <img class="logos" src="{{ tag }}" alt="#" />
+      </div>
     </li>
   </ul>
   <div class="card-footer">

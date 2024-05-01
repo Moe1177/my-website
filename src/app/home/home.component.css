@@ -4,7 +4,8 @@
   color: white;
 }
 
-.container {
+
+.container-xxl {
   margin-top: 100px;
 }
 
@@ -25,16 +26,21 @@ p {
 }
 
 button {
-  background-color: white;
-  color: black;
+  background-color: rgb(53, 53, 53);
+  color: white;
   border-radius: 10em;
   font-size: 17px;
   font-weight: 600;
   padding: 1em 2em;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  border: 1px solid black;
-  box-shadow: 0 0 0 0 black;
+  border: 1px solid gray;
+  box-shadow: 0 0 0 0 rgb(0, 0, 0);
+}
+
+.download-text {
+  background-color: white;
+  color: black;
 }
 
 button:hover {
@@ -101,4 +107,17 @@ a button i {
   a button i {
     font-size: 18px;
   }
+}
+
+@media(min-width: 1200px) {
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 35px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+  }
+  
 }
