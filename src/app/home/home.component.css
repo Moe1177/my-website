@@ -5,7 +5,7 @@
 }
 
 
-.container-xxl {
+.container-lg {
   margin-top: 100px;
 }
 
@@ -109,7 +109,7 @@ a button i {
   }
 }
 
-@media(min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   p {
     font-size: 1.25rem;
     margin-bottom: 35px;

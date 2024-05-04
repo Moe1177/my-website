@@ -5,4 +5,5 @@ export interface Project {
     picture: string;
     tags: string[];
     projectLink: string;
+    demoLink: string;
 }

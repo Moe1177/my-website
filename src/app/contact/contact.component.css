@@ -3,6 +3,10 @@
   color: white;
 }
 
+.container {
+  margin-top: 100px;
+}
+
 h1 span {
   background-image: linear-gradient(to right, violet, dodgerblue);
   background-clip: text;
@@ -118,15 +122,16 @@ h1 span {
   font-size: inherit;
   gap: 8px;
   margin-top: 8px;
-  cursor: pointer;
   border-radius: 6px;
   transition: 0.75s;
+  cursor: default;
 }
 
 #submitBtn.form-submit-btn.form-filled {
   transition: 1.2s;
   background-image: linear-gradient(to right, violet, dodgerblue);
   color: #000;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

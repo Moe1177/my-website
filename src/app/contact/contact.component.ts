@@ -7,16 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit{
   ngOnInit(): void {
-    console.log("ngOnInitIsCalled");
+    // Gets the submit btn thanks to id
     const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement;
+    
+    // Gets all fields with listed classes
     const formInputs = document.querySelectorAll(
       '.form-group input, .form-group textarea'
     );
-    console.log("formInputs", formInputs);
-    console.log("submitBtn", submitBtn);
 
+    
     function checkFormInputs() {
-      console.log("checkFormInputs is called");
+      
       let allFilled = true;
       formInputs.forEach((input: HTMLInputElement) => {
         if (input.value.trim() === '') {

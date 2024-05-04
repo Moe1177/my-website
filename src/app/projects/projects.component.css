@@ -3,6 +3,10 @@
   color: white;
 }
 
+.container {
+  margin-top: 100px;
+}
+
 h1 span {
   background-image: linear-gradient(to right, violet, dodgerblue);
   background-clip: text;
@@ -51,5 +55,11 @@ ul img {
 @media (min-width: 992px) and (max-width: 1199px) {
   .hello {
     margin-right: 35px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hello {
+    margin: auto;
   }
 }
