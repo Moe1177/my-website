@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit{
+  
+  formAPI = environment.formAPI;
+
   ngOnInit(): void {
     // Gets the submit btn thanks to id
     const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement;
