@@ -13,11 +13,6 @@
           "destination": "/index.html"
         }
       ]
-    },
-    {
-      "target": "my-website",
-      "source": ".",
-      "frameworksBackend": {}
     }
   ]
 }
