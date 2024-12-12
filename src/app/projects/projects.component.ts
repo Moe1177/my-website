@@ -12,6 +12,33 @@ export class ProjectsComponent {
   project: Project[] = [
     {
       id: this.counter,
+      title: `Registration Website`,
+      summary: `Built the backend of the ConUHacks IX registration website, the biggest hackathon in Quebec with 3000+ applications.`,
+      tags: [
+        '../assets/logos/nextjs.svg',
+        '../assets/logos/icons8-typescript.svg',
+        '../assets/logos/mongodb.svg',
+        '../assets/logos/microsoft-azure.svg',
+      ],
+      projectLink: '#',
+      demoLink: 'https://register.conuhacks.io',
+      picture: '../assets/images/ConUHacks.png',
+    },
+    {
+      id: ++this.counter,
+      title: `Mailing List Website`,
+      summary: `Developped the backend of the ConUHacks IX mailing list website. This website was used to send updates to our 550+ subscribers.`,
+      tags: [
+        '../assets/logos/nextjs.svg',
+        '../assets/logos/icons8-typescript.svg',
+        '../assets/logos/mongodb.svg',
+      ],
+      projectLink: '#',
+      demoLink: 'https://mailinglist.conuhacks.io',
+      picture: '../assets/images/MailingList.png',
+    },
+    {
+      id: ++this.counter,
       title: `Moe.dev`,
       summary: `Responsive personal portfolio website I built for myself using Angular, Bootstrap and Typescript.`,
       tags: [
@@ -53,7 +80,7 @@ export class ProjectsComponent {
       picture: '../assets/images/Screenshot2.png',
     },
     {
-      id: this.counter,
+      id: ++this.counter,
       title: `Friend's Portfolio Website`,
       summary: `Simple portfolio website I built for my friend to help him post his architectural portfolio. 
         (Demo Coming Soon)`,
