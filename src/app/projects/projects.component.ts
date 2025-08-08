@@ -12,6 +12,34 @@ export class ProjectsComponent {
   project: Project[] = [
     {
       id: this.counter,
+      title: `ManiFast AI`,
+      summary: `Application that helps user save time manipulating and performing complex tasks on their Excel/CSV files using AI.`,
+      tags: [
+        '../assets/logos/nextjs.svg',
+        '../assets/logos/spring-boot.svg',
+        '../assets/logos/FastAPI.svg',
+        '../assets/logos/supabase.svg',
+      ],
+      projectLink: '#',
+      demoLink: 'https://www.manifast-ai.io/',
+      picture: '../assets/images/manifast.png',
+    },
+    {
+      id: ++this.counter,
+      title: `Dialogos`,
+      summary: `A chat messaging application that allows users to create and join chat rooms, send messages, and share files in real-time.`,
+      tags: [
+        '../assets/logos/nextjs.svg',
+        '../assets/logos/spring-boot.svg',
+        '../assets/logos/flask-seeklogo.svg',
+        '../assets/logos/mongodb.svg',
+      ],
+      projectLink: 'https://github.com/Moe1177/SOEN341_Winter2025',
+      demoLink: 'https://soen-341-winter2025.vercel.app/',
+      picture: '../assets/images/dialogos.png',
+    },
+    {
+      id: ++this.counter,
       title: `Registration Website`,
       summary: `Built the backend of the ConUHacks IX registration website, the biggest hackathon in Quebec with 3000+ applications.`,
       tags: [
